@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block body %}
+    <ul>
+        {% for contact in lists %}
+        <li>
+            Nombre : {{contact.name}} Telefono: {{contact.phone}} Correo: {{contact.email}} <a href="/delete/{{contact.name}}" style="color=red"> Eliminar </a>
+        </li>
+        {% endfor %}
+    </ul>
+	<a href="/">Regresar al Inicio</a>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<form action="/add" method="post">
+    <br>
+    Ingrese contacto: <input type="text" name="name" id="name">
+    <br>
+    Ingrese Telefono: <input type="number" name="phone" id="phone">
+    <br>
+    Ingrese Correo: <input type="email" name="email" id="email">
+    <br>
+    <input type="submit" value="Agregar" name="button">
+</form>
+<form action="/list" method="post">
+    <input type="submit" value="Lista Completa">
+</form>
+    <a href="/">Regresar</a>
+{% endblock %}
